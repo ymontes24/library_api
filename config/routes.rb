@@ -4,7 +4,11 @@ Rails.application.routes.draw do
       resources :authors
       resources :books
       resources :users, except: [:index]
-      resources :loans
+      resources :loans do
+        member do
+          patch :return_book
+        end
+      end
     end
   end
 end
