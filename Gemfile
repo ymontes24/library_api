@@ -6,6 +6,7 @@ gem "rails", "~> 8.0.2"
 gem "pg", "~> 1.1"
 # Use bcrypt to securely store passwords
 gem 'bcrypt', '~> 3.1.7'
+gem 'jwt'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
@@ -47,3 +48,5 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
+
+gem "active_model_serializers", "~> 0.10.15"

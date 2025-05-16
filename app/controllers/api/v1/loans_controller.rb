@@ -1,4 +1,5 @@
 class Api::V1::LoansController < ApplicationController
+    before_action :authentication_user, except: [:index]
     before_action :set_loan, only: [:show, :update, :destroy, :return_book]
   
     # GET /api/v1/loans
